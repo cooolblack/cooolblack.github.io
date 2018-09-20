@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="big">
+			<div class="box t1"></div>
+			<div class="box t2"></div>
+			<div class="box t3"></div>
+			<div class="box t4"></div>
+		</div>
+		<style>
+			.big {
+				height: 110px;
+			}
+			
+			.box {
+				width: 100px;
+				height: 100px;
+				background: lightcoral;
+				margin: 5px;
+				float: left;
+				transition: all 1s;
+			}
+			
+			.t1:hover {
+				/*transform: translateX(100px) translateY(100px);*/
+				transform: translate(100px, 100px)
+			}
+			
+			.t2:hover {
+				/*transform: scaleX(0.5) scaleY(0.5);*/
+				transform: scale(0.5, 0.5)
+			}
+			
+			.t3:hover {
+				/*transform: rotateX(45deg) rotateY(45deg);*/
+				transform: rotate(45deg)
+			}
+			
+			.t4:hover {
+				/*transform: skewX(45deg) skewY(45deg);*/
+				transform: skew(45deg, 45deg)
+			}
+		</style>
+		
+		<label class="switch">
+			<input type="checkbox" class="pitch"/>
+			<div class="side"></div>
+		</label>
+		<label class="switch">
+			<input type="checkbox" class="pitch"/>
+			<div class="side side_2"></div>
+		</label>
+		<br /><br /><br />
+		<label class="switch2">
+			<input type="radio" name="te"/>
+			<div class="radio">单选框</div>
+		</label>
+		<label class="switch2">
+			<input type="radio" name="te"/>
+			<div class="radio">单选框</div>
+		</label>
+		<br /><br /><br />
+		<label class="switch2">
+			<input type="checkbox"/>
+			<div class="checkbox">多选框</div>
+		</label>
+		<label class="switch2">
+			<input type="checkbox"/>
+			<div class="checkbox">多选框</div>
+		</label>
+		<style type="text/css">
+			.switch {
+				width: 60px;
+				height: 30px;
+				display: inline-block;
+				background: lightgrey;
+				border-radius:25px ;
+			}
+			
+			.pitch {
+				display: none;
+			}
+			
+			.side {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background: lightgrey;
+				transition: .5s;
+			}
+			
+			.side:before {
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: white;
+				display: block;
+				left: 5px;
+				top: 5px;
+				transition: .5s;
+			}
+			.side_2:before{
+				border-radius:25px ;
+			}
+			.side_2{
+				border-radius: 25px;
+			}
+			.pitch:checked+.side {
+				background: deepskyblue;
+			}
+			
+			.pitch:checked+.side:before {
+				left: 35px;
+			}
+			.switch2 input{
+				display: none;
+			}
+			.switch2{
+				border-radius: 5px;
+				height: 30px;
+				width: 90px;
+				background: lightgrey;
+				display: inline-block;
+			}
+			.switch2 div{
+				width: 100%;
+				height: 100%;
+				line-height: 30px;
+				text-align: center;
+				border-radius: 5px;
+			}
+			.switch2 div:before{
+				content: '';
+				background: url(images/img/input-unchecked.png);
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				vertical-align: middle;
+				margin-right: 6px;
+				margin-top: -2px;
+			}
+			.switch2 input:checked + div{
+				background: lightblue;
+			}
+			.switch2 input:checked + div:before{
+				background: url(images/img/input-checked.png);
+			}
+		</style>
+		
+		<div class="x-box">
+			<a href="#" class="hover-in-1">111</a>
+			<a href="#" class="hover-in-2">222</a>
+			<a href="#" class="hover-in-3">333</a>
+			<a href="#" class="hover-in-4">444</a>
+		</div>
+		<style type="text/css">
+			.x-box{
+				margin-top: 20px;
+				height: 200px;
+			}
+			a{
+				position: relative;
+				color: black;
+				text-decoration: none;
+				padding: 10px 20px;
+				background: #999;
+				margin: 5px;
+				display: inline-block;
+				z-index: 1;
+			}
+			a:before{
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 0;
+				/*background: lightblue;*/
+				z-index: -1;
+				transition: all 1s;
+			}
+			.hover-in-1{
+				box-shadow: inset 0 0 0 4px #999, 0 0 1px rgba(0, 0, 0, 0);
+			}
+			.hover-in-1:hover{
+				background: white;
+			}
+			.hover-in-2:before{
+				transition: none;
+			}
+			.hover-in-2:hover:before{
+				border: white 4px solid;
+				left: 4px;
+				top: 4px;
+				bottom: 4px;
+				right: 4px;
+				background: none;
+			}
+			.hover-in-3:before{
+				background: lightblue;
+				width: 100%;
+				height: 100%;
+				transform: scaleX(0);
+			}
+			.hover-in-3:hover:before{
+				transform: scaleX(1);
+			}
+			.hover-in-4:before{
+				background: lightblue;
+				width: 100%;
+				height: 4px;
+				top: 37px;
+				transform-origin:0 50% 0 ;
+				transform: scaleX(0);
+			}
+			.hover-in-4:hover:before{
+				transform: scaleX(1);
+			}
+		</style>
+	</body>

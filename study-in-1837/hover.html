@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{
+			transition: all 1s;
+		}
+		.box{
+			position: relative;
+			float: left;
+			margin: 0 20px;
+		}
+		.box0{
+			width: 320px;
+			height: 320px;
+		}
+		.border{
+			display: inline-block;
+			position: absolute;
+			border-radius:50%;
+			border: 10px solid lightseagreen;
+			border-bottom: lightgreen 10px solid;
+			border-right:lightgreen 10px solid ;
+			width: 300px;
+			height: 300px;
+			/*transition: all 1s;*/
+		}
+		img{
+			border-radius:50% ;
+			position: absolute;
+		}
+		.po1{
+			top: 10px;
+			left: 10px;
+		}
+		.text{
+			border-radius:50% ;
+			top: 10px;
+			left: 10px;
+			position: absolute;
+			background:rgba(0,0,0,0);
+			width: 300px;
+			height: 300px;
+			/*transition: all 1s;*/
+		}
+		.box:hover .border{
+			transform: rotate(180deg);
+		}
+		.box:hover .text{
+			background:rgba(0,0,0,0.5);
+		}
+	</style>
+	<body>
+		<div class="box box0">
+			<img src="images/景色.jpg" class="po1"/>
+			<div class="border"></div>
+			<div class="text"></div>
+		</div>
+		<div class="box box2">
+			<div class="border2"></div>
+			<img src="images/景色.jpg" class="po2"/>
+			<div class="text2"></div>
+		</div>
+		<style type="text/css">
+			.box2{
+				width: 300px;
+				height: 300px;
+			}
+			.border2{
+				position: absolute;
+				width: 260px;
+				height: 260px;
+				border-radius: 50%;
+				border: 20px solid rgba(255,255,255,0.5);
+			}
+			.po2{
+				z-index: -1;
+			}
+			.text2{
+				border-radius:50% ;
+				position: absolute;
+				background:rgba(0,0,0,0.0);
+				width: 300px;
+				height: 300px;
+				left: -300px;
+				display: none;
+			}
+			.box2:hover .border2,.box2:hover img{
+				transform: rotate(90deg);
+			}
+			.box2:hover .text2{
+				display: block;
+				animation: run 1s forwards;
+			}
+			@keyframes run{
+				from{
+					background:rgba(0,0,0,0.0);
+					left: -300px;
+				}
+				to{
+					background:rgba(0,0,0,0.5);
+					left: 0;
+				}
+			}
+		</style>
+	</body>
+</html>

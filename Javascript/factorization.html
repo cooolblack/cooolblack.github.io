@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="shu">
+<button id="btn">分解</button>
+</body>
+<script type="text/javascript">
+    btn.onclick=function () {
+        var a=parseInt(shu.value);
+        var b,c;
+        for (b=2,c=a;b<=c;b++){
+            if (c%b ==0){
+                if (c ==b){
+                    document.write(b)
+                }else {
+                    document.write(b+"*")
+                }
+                c/=b;
+                b--;
+            }
+        }
+
+    }
+</script>
+</html>

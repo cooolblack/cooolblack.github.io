@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+北京飞马尔代夫:
+<select id="s1">
+    <option value="dj">3</option>
+    <option value="wj">4</option>
+
+</select>
+<select id="s2">
+    <option value="top">头等舱</option>
+    <option value="low">经济舱</option>
+</select>
+<button id="btn">下单</button>
+</body>
+
+<script type="text/javascript">
+    btn.onclick=function () {
+        var s=s1.value;
+        var s0=s2.value;
+        var  m=4000;
+        if (s=="wj"){
+            if (s0 == "top"){
+                m*=0.9
+            } else {
+                m*=0.75
+            }
+        }else{
+            if (s0== "top"){
+                m*=0.6
+            } else {
+                m*=0.3
+            }
+        }
+        alert("需要:"+m+"元")
+    }
+</script>
+</html>

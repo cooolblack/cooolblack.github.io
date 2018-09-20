@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #eeeeee;
+}
+.head{
+    background: #d7d7d7;
+    width: 1366px;
+}
+.head-h,.head-h a{
+    text-align: center;
+    color: #6a6a6a;
+    font-size: 12px;
+}
+.head-h{
+    position: relative;
+    margin: auto;
+    width: 1190px;
+    height: 30px;
+}
+.map{
+    width: 258px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.map div{
+    padding: 0 7px;
+    float: right;
+}
+.map i{
+    color: red;
+    font-size: 12px;
+}
+.f1{
+    position: absolute;
+    right: 0;
+    line-height: 30px;
+
+}
+.f1 div,.f1 i,.f1 li{
+    float: left;
+}
+.f1 div{
+    margin-left: 4px;
+}
+.f1 a:hover{
+    color: red;
+}
+.mf a{
+    color: red;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+.g{
+    width: 1px;
+    height: 10px;
+    background: black;
+    margin: 10px 7px 0 7px;
+}
+.header{
+    height: 140px;
+}
+.header-w{
+    margin: auto;
+    width: 1190px;
+    height: 100%;
+    z-index: 11;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    background-image: url("./images/sprite.head.png");
+    width: 190px;
+    height: 170px;
+    overflow: hidden;
+}
+.header-b{
+    position: relative;
+    z-index: 1;
+    height: 60px;
+}
+.sousuo{
+}
+.text{
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    height: 25px;
+    border: 1px solid transparent;
+    line-height: 25px;
+    font-size: 14px;
+    padding: 4px 44px 4px 4px;
+    right: 30%;
+}
+.ss{
+    position: absolute;
+    bottom: 0;
+    right: 26%;
+    width: 50px;
+    height: 35px;
+    background: red;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+}
+.ss i{
+    font-size: 26px;
+    color: white;
+}
+.car{
+    position: absolute;
+    bottom: 0;
+    right: 7%;
+    width: 188px;
+    height: 33px;
+    background:white;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #e3e4e5;
+    float: left;
+}
+.car div{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 14px 14px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    top: 5px;
+    right: 27px;
+    line-height: 14px;
+}
+.car a,.car i{
+    color: red;
+    font-size: 16px;
+}
+.rm{
+    position: absolute;
+    right: 27%;
+    top: 62px;
+}
+.rm a:hover{
+    color: red;
+}
+#wbh{
+    color: red;
+}
+.rm a{
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-right: 7px;
+}
+.qnjd{
+    position: absolute;
+    top: 100px;
+    width: 790px;
+    height: 40px;
+    right: 200px;
+    line-height: 40px;
+}
+.qnjd li,.qnjd div{
+    display: block;
+    float: left;
+}
+.qnjd li{
+    margin: 0 15px;
+}
+.qnjd a{
+    color: black;
+    font-size: 14px;
+}
+.qnjd a:hover{
+    color: red;
+}
+.ygx{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: black;
+    position: relative;
+    top: 16px;
+}
+.o6{
+    position: absolute;
+    top: 0;
+    right: -200px;
+}
+.fs{
+    position: relative;
+}
+.fs-h{
+    background: #eeeeee;
+    z-index: 1;
+    margin: 0 auto;
+    width: 1190px;
+}
+.bq-l{
+    height: 480px;
+    float: left;
+    margin-right: 10px;
+}
+.bq-l ul{
+    height: 460px;
+    padding: 10px 0;
+    color: #636363;
+    background: #fefefe;
+    width: 190px;
+}
+.bq-l li{
+    padding-left: 10px;
+    height: 27px;
+
+}
+.bq-l a{
+    font-size: 14px;
+    color: #6e6e6e;
+}
+.bq-l a:hover{
+    color: red;
+}

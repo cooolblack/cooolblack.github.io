@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            width: 30px;
+        }
+        span{
+            margin: 0 5px;
+        }
+        button{
+            line-height: 18px;
+            height: 21px;
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="hour" value="23"><span>:</span>
+<input type="text" id="min" value="59"><span>:</span>
+<input type="text" id="ss" value="59">
+<button id="btn">下一秒</button>
+</body>
+<script type="text/javascript">
+        btn.onclick=function () {
+            var h=parseInt(hour.value);
+            var m=parseInt(min.value);
+            var s=parseInt(ss.value);
+
+            h = h > 23 ? 23 : h;
+            m = m > 59 ? 59 : m;
+            s = s > 59 ? 59 : s;
+            hour.value=h;
+            min.value=min;
+            ss.value=ss;
+               s+=1;
+            if (s>=60){
+                m+=1;
+                s=0;
+                if (m>=60){
+                    h+=1;
+                    m = 0;
+                    if (h>=23) {
+                        h =0;
+                        hour.value=h;
+                        min.value=m;
+                        ss.value=s;
+                        // document.write(h+":"+m+":"+s)
+                    }else{
+                        hour.value=h;
+                        min.value=m;
+                        ss.value=s;
+                        // document.write(h+":"+m+":"+s)
+                    }
+                } else{
+                    hour.value=h;
+                    min.value=m;
+                    ss.value=s;
+                    // document.write(h+":"+m+":"+s)
+                }
+            } else{
+                hour.value=h;
+                min.value=m;
+                ss.value=s;
+                // document.write(h+":"+m+":"+s)
+            }
+        }
+</script>
+</html>

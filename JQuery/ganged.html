@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/省市.js"></script>
+	</head>
+	<body>
+		所在城市:
+		<select id='province'></select>
+		<select id='city'></select>
+		<select id='district'></select>
+	</body>
+	<script type="text/javascript">
+		$(function () {
+			var html1='';
+			for(var i in citiesall){
+				html1+='<option>'+citiesall[i].name+'</option>';	
+			}
+			$('#province').html(html1);
+			$('#province').change(function  () {
+				var province=$(this).val();
+				for(var i in citiesall){
+					if(citiesall[i].name==province){
+						var html2='';
+						var citys=citiesall[i].city;
+						for (var j in citys) {
+							html2+='<option>'+citys[j].name+'</option>';	
+						}
+						$('#city').html(html2);
+					}
+				}
+			});
+			$('#city').change(function() {
+				var city=$(this).val();
+				for (var i in citiesall){
+					var citys=citiesall[i].city;
+					for (var j in citys) {
+						if (citys[j].name==city) {
+							var html3='';
+							var district=citys[j].area;
+							for (var k in district) {
+								html3+='<option>'+district[k]+'</option>';
+							}
+							$('#district').html(html3);
+						}
+					}
+				}
+			});
+		});
+	</script>
+</html>

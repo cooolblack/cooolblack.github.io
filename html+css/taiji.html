@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #58beda;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .o{
+            width: 200px;
+            height: 200px;
+            margin: 15px auto;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            animation:r linear 10000ms infinite alternate;
+        }
+        .a{
+            background: black;
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+        }
+        .b{
+            background: #fff;
+            width: 100px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+        }
+        .a1{
+            width: 100px;
+            height: 100px;
+            background: black;
+            border-radius: 50%;
+            left: 50px;
+            position: absolute;
+            z-index: 99;
+        }
+        .b1{
+             width: 100px;
+             height: 100px;
+             background: white;
+             border-radius: 50%;
+             right: 50px;
+             bottom: 0;
+             position: absolute;
+            z-index: 99;
+         }
+        .a11{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+        .b11{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+        @keyframes r {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="o" >
+    <div class="a"><div class="a1"><div class="a11"></div></div></div>
+    <div class="b"><div class="b1"><div class="b11"></div></div></div>
+</div>
+</body>
+</html>

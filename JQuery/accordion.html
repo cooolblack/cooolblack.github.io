@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手风琴</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style type="text/css">
+		ul{
+			list-style: none;
+			width:100px;
+			border:1px solid #ccc;
+			padding:0px;
+		}
+		ul.box > li > a{
+			display: block;
+			background:#ccc;
+		}
+		ul.box >li > ul{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<ul class="box">
+		<li>
+			<a href="#">用户信息</a>
+			<ul>
+				<li><a href="#">个人头像</a></li>
+		   		<li><a href="#">修改账号</a></li>
+		   		<li><a href="#">修改账号</a></li>
+			</ul>
+		</li>
+		<li><a href="#">用户钱包</a>
+			<ul>
+				<li><a href="#">个人头像</a></li>
+		   		<li><a href="#">修改账号</a></li>
+		   		<li><a href="#">修改账号</a></li>
+			</ul>
+		</li>
+		<li><a href="#">用户好友</a>
+			<ul>
+				<li><a href="#">个人头像</a></li>
+		   		<li><a href="#">修改账号</a></li>
+		   		<li><a href="#">修改账号</a></li>
+			</ul>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		$(function  () {
+			$('.box>li>a').click(function  () {
+				$(this).parent().siblings().children('ul').css('display','block');
+				$('.box li ul').toggle()
+			});
+		});
+	</script>
+</body>
+</html>

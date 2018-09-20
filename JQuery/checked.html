@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+	<form>
+		<label>账号:</label>
+		<input type="text"/><br/>
+		<label>爱好:</label>
+		<input type="checkbox" />游戏
+		<input type="checkbox" />篮球
+		<input type="checkbox" />足球
+		<input type="checkbox" />羽毛球
+		<input type="checkbox" />敲代码
+		<a href="javascript:void(0)">全选</a> -
+		<a href="javascript:void(0)">全不选</a> -
+		<a href="javascript:void(0)">反选</a>
+	</form>
+	<div>
+	<input type="checkbox" checked />同意网站协议
+	<input type="checkbox" checked />同意服务协议
+	<b>不同意</b>
+	</div>
+	<script type="text/javascript">
+		//选择 checked选中的元素
+		// $(':checked').prop('checked',false);
+		// prop 设置选中元素的属性 checked 属性为true  全部选中
+		// $('form :checkbox').prop('checked',true);
+		//click(function(){}) click事件
+		$('form a:eq(0)').click(function(){
+			$('form :checkbox').prop("checked",true);
+		});
+		$('form a:eq(1)').click(function(){
+			$('form :checkbox').prop('checked',false);
+		});
+		$('form a:eq(2)').click(function(){
+			
+			$('form :checkbox').each(function(i,e){
+				// console.log('i==>',i,'e==>',e);
+				e.checked=!e.checked;
+			});
+
+			var checkboxArr=document.getElementsByTagName('input');
+			console.log('原生元素对象==>',checkboxArr);
+			//console.log('jquery 获取元素对象==>',arr);
+			// for(var i in arr){
+			// 	arr[i].checked=!arr[i].checked;
+			// }
+
+		});
+		$('div b').click(function(){
+			$('div :checked').prop('checked',false);
+		});
+	</script>
+</body>
+</html>

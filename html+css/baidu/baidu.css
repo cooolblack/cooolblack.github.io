@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+li{
+    list-style: none;
+}
+.bd{
+    text-align: center;
+}
+.head{
+    margin-top: 19px;
+    margin-bottom: 5px;
+}
+.head-r{
+    position: absolute;
+    margin-top: 19px;
+    margin-bottom: 5px;
+    right: 0;
+    top: 0;
+    font-weight: 700;
+}
+.head-r li{
+    float: left;
+    font-size: 13px;
+    margin-left: 20px;
+}
+.head-r a{
+    color: black;
+}
+.head-r a:hover{
+    color: #1300ff;
+}
+.gd{
+    background: #6065ff;
+    color: white;
+    padding: 0 4px 5px  4px;
+}
+.srk{
+    display: inline-block;
+    margin-right: 0;
+    border: 1px solid ;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
+    width: 539px;
+    height: 34px;
+}
+.tk{
+    height: 22px;
+    font: 16px/18px Arial;
+    line-height: 22;
+    margin: 6px 0 0 7px;
+    width: 500px;
+    float: left;
+    outline: 0;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+.tp{
+    margin: 20px 0;
+}
+.dj input{
+    position: absolute;
+    color: white;
+    background: #2d78f4;
+    font-size: 15px;
+    width: 100px;
+    height: 36px;
+    border: 0;
+    letter-spacing: 1px;
+}
+.dj input:hover{
+    background: #0a2dff;
+}
+.ssk{
+    margin-top: 100px;
+    margin-right: 70px;
+}
+.xm1{
+    margin-top: 150px;
+}
+.xm2 a,.xm2{
+    font-size: 12px;
+    color: #474747;
+    margin: 25px 0;
+}
+.p1 a{
+    margin-right:8px;
+    margin-left: 8px;
+}.p2{
+     margin-top: 5px;
+ }

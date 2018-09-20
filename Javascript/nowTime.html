@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            width: 500px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #bbbbbb;
+            margin:0 auto;
+            top: 50px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="bbb"></div>
+</body>
+<script type="text/javascript">
+    var a=document.getElementsByTagName("div");
+    setInterval(function () {
+        var date=new Date();
+        bbb.innerHTML=date.toLocaleString();
+    },100)
+</script>
+</html>

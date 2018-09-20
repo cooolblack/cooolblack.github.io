@@ -1,0 +1,88 @@
+.nk-main{
+    padding-top: 70px;/*垫顶，填充顶部*/
+    margin: 0 auto;/*四边间距*/
+    width: 960px;/*宽*/
+}
+.nk-main .wrapper{
+    background: #fff;/*背景色*/
+    border: 1px solid #ccc;/*加粗边界*/
+    border-radius: 4px; /*边框半径*/
+}
+.nk-main .wrapper .tabbed {
+    height: 84px;/*高*/
+    background: #f0f0f0;/*背景色*/
+}
+.nk-main .wrapper .tabbed li{
+    float: left;/*浮动：左*/
+    width: 50%;/*宽*/
+    height: 84px;/*高*/
+    line-height: 84px;/*行距*/
+    text-align: center;/*分本居中*/
+}
+.nk-main .wrapper .tabbed li i,
+.nk-main .wrapper .tabbed li a{
+    color: #00BC9B;/*更改颜色*/
+    font-size: 26px;/*字体大小*/
+}
+.nk-main .wrapper .tabbed li i {
+    margin-right: 12px;/*右边距*/
+}
+.nk-main .wrapper .tabbed .tab-selected{
+    margin-top: -2px;/*上边距*/
+    background: #fff !important;/*背景色！重要*/
+    border-top: 2px solid #00BC9B !important;/*上边框！重要*/
+}
+.nk-main .wrapper .wrapper-container{
+    margin: 0 20px;/*间距*/
+    padding: 60px;/*内边距*/
+    border-top: 1px solid #a7c0ac;/*上边框*/
+}
+.nk-main .wrapper .wrapper-container .wrapper-l{
+    width: 400px;/*宽*/
+}
+.nk-main .wrapper .wrapper-l .form-group{
+    margin-bottom: 20px;/*下边距*/
+    font-size: 14px;/*字体大小*/
+    color: #333;/*颜色*/
+}
+.nk-main .wrapper .wrapper-l .form-group .form-label{
+    display: inline-block;/*显示内联块*/
+    padding: 0 15px;/*内边距*/
+    width: 80px;/*宽*/
+    height: 40px;/*高*/
+    line-height: 40px;/*行距*/
+    text-align: right;/*文本右对齐*/
+}
+.nk-main .wrapper .wrapper-l .form-group .form-input{
+    padding: 8px;/*内边距*/
+    width: 248px;/*宽*/
+    height: 22px;/*高*/
+    border-radius: 2px;/*边框半径*/
+    color: #ccc;/*颜色*/
+}
+.nk-main .wrapper .wrapper-l .about-pwd{
+    margin-left: 110px;/*左边距*/
+}
+.nk-main .wrapper .wrapper-l .about-pwd .forget-pwd{
+    float: right;/*浮动：右*/
+}
+.nk-main .wrapper .wrapper-l .form-group .form-login{
+    margin-left: 110px;/*左边距*/
+    margin-right: 20px;/*右边距*/
+}
+.nk-main .wrapper .wrapper-l .form-group .form-login .login-btn{
+    display: inline-block;/*显示内联块*/
+    width: 100%;/*宽*/
+    padding: 10px 0;/*内边距*/
+    border: none 0;/*无边框*/
+    background: #00BC9B;/*背景色*/
+    border-radius: 3px;/*边框半径*/
+    color: #fff;/*颜色*/
+    text-align: center;/*文本居中*/
+}
+.nk-main .wrapper .wrapper-l .form-group .form-login .login-btn:hover{
+    background: #06a7bc;/*背景色*/
+}
+.nk-main .wrapper  .wrapper-container .wrapper-r{
+    width: auto;/*宽*/
+}

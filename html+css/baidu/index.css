@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 600px;
+}
+div{
+    display: block;
+}
+input{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    height: 100%;
+    padding-bottom: 100px;
+    text-align: center;
+}
+ul{
+    float: right;
+    padding: 0 20px 0 0;
+    margin: 19px 0 5px;
+}
+li{
+    display: inline-block;
+    margin: 5px ;
+}
+.a a{
+    color: black;
+}
+.a a:hover{
+    color: #0c15ff;
+}
+.lg{
+    height: 132px;
+}
+.ss{
+    padding-top: 100px;
+}
+.sr{
+    display: inline-block;
+    width: 500px;
+    height: 36px;
+    line-height: 22px;
+    border: 1px solid black;
+}
+.sr input{
+    float: left;
+    margin-top: 3px;
+    margin-left: 4px;
+    width: 450px;
+    height: 22px;
+    border: none;
+    position: relative;
+}
+.dj{
+    position: absolute;
+    width: 10px;
+    height: 38px;
+}
+.dj input{
+    width: 100px;
+    height: 38px;
+    color: white;
+    font-size: 15px;
+    background: #3684ff;
+    border: 1px solid #3684ff;
+}
+.bb{
+    text-align: center;
+    padding-top: 200px;
+    font: 12px Arial;
+}
+.cc a{
+    color: #5f6a73;
+    margin: 10px;
+    font-size: 12px;
+}
+.cc2 a{
+    color: #5f6a73;
+    font-size: 12px;
+}
+.cc2{
+    color: #5f6a73;
+    font-size: 12px;
+}
+.cc,.cc2{
+    margin: 6px;
+}
+.cc{
+    margin-top: 20px;
+}
+.sa{
+    margin-right: 20px;
+}
+.dj input:hover{
+    background: #1300ff;
+}
+.xj{
+    margin-top: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("./images/xj.png");
+}
+.xj:hover{
+    background-position: 0 18px;
+}

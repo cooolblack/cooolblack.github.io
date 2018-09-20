@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="yw">
+<input type="text" id="sx">
+<input type="text" id="yy">
+<button id="btn1">总分</button>
+<button id="btn2">平均分</button>
+<input type="text" id="fen">
+</body>
+<script type="text/javascript">
+    btn1.onclick=function () {
+        var  a=parseInt(yw.value);
+        var  b=parseInt(sx.value);
+        var  c=parseInt(yy.value);
+        var  x=a+b+c;
+        fen.value=("总分:"+x)
+    }
+    btn2.onclick=function () {
+        var  a=parseInt(yw.value);
+        var  b=parseInt(sx.value);
+        var  c=parseInt(yy.value);
+        var  x=(a+b+c)/3;
+        fen.value=("平均分:"+x)
+    }
+</script>
+</html>

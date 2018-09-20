@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<select multiple>
+		<option>111</option>
+		<option>222</option>
+		<option>333</option>
+		<option>444</option>
+		<option>555</option>
+		<option>666</option>
+		<option>777</option>
+	</select>
+	<button>&gt;&gt;</button>
+	<button>&gt;</button>
+	<button>&lt;&lt;</button>
+	<button>&lt;</button>
+	<select multiple>
+	</select>
+	<script type="text/javascript">
+		$(function () {
+			$('button:first').click(function  () {
+				$('select:first option').appendTo('select:last');
+			});
+			$('button:eq(1)').click(function  () {
+				$('select:first option:selected').appendTo('select:last');
+			});
+			$('button:last').click(function  () {
+				$('select:last option:selected').appendTo('select:first');
+			});
+			$('button:eq(2)').click(function  () {
+				$('select:last option').appendTo('select:first');
+			})
+		});
+	</script>
+</body>
+</html>

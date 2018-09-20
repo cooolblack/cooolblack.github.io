@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+            function y(a) {
+                if (a % 400 == 0 || a % 4 == 0 && a % 100 != 0) {
+                    return a+"该年是闰年"
+                } else {
+                    return"该年不是闰年"
+                }return
+            }
+            alert(y(prompt("请输入年份:")))
+
+        for (var b=1999; b <= 2050; b++) {
+                if (b % 400 == 0 || b % 4 == 0 && b % 100 != 0) {
+                    document.write(y(b)+"<br>")
+                }
+            }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="t1" />
+		<select name="" id="s">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<input type="text" id="t2"/>
+		<span>=</span>
+		<input type="text" id="result" />
+		<button id="btn">计算</button>
+	</body>
+	<script type="text/javascript">
+/*		var t1=document.getElementById("t1")
+		var t2=document.getElementById("t2")
+		var s=document.getElementById("s")
+		var btn=document.getElementById("btn")*/
+		btn.onclick=function(){
+			var ss=s.value;
+			var a=parseInt(t1.value);
+			var b=parseInt(t2.value);
+			var x;
+			switch(ss){
+				case"+":
+				x=a+b;
+				break;
+				case"-":
+				x=a-b;
+				break;
+				case"*":
+				x=a*b;
+				break;
+				case"/":
+				x=a/b;
+				break;
+			}
+			result.value=x
+		}
+	</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .col-xs-4>div>.tx{
+        width: 30px;
+        border-radius: 50%;
+    }
+    .col-xs-4>div>.tp{
+        width: 400px;
+    }
+    .col-xs-4>div>span{
+        font-size: 26px;
+        line-height: 30px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+        </div>
+    </div>
+</div>
+
+<script>
+    $.get("https://www.apiopen.top/satinApi",{
+        type:1,
+        page:1
+    },function (data, status, xhr) {
+        console.log(data);
+        $.each(data.data, function (index,item) {
+            $('.col-xs-4').append("<div></div>");
+            $('.col-xs-4>div').eq(index).append("<img class='tx' src='"+ item.profile_image +"'/>")
+            $('.col-xs-4>div').eq(index).append("<span>"+item.name+"</span>");
+            $('.col-xs-4>div').eq(index).append("<img class='tp' src='"+ item.cdn_img +"'/>")
+            $('.col-xs-4>div').eq(index).append("<p>"+item.text+"</p>")
+        })
+    })
+</script>
+</body>
+</html>

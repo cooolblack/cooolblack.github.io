@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 900px;
+            margin: auto;
+        }
+        #box{
+            height: 600px;
+            border: 1px solid red;
+            position: relative;
+            background-color: gray;
+        }
+        input {
+            width: 100px;
+            height: 30px;
+            border: none;
+            background: linear-gradient(to bottom,blue,yellow);
+            border-radius: 5px;
+            outline: none;
+        }
+        input:first-of-type{
+            margin-left: 350px;
+        }
+    </style>
+</head>
+<body>
+<div id="box" ></div>
+<input type="submit" value="开始">
+<input type="submit" value="暂停">
+</body>
+<script type="text/javascript">
+    var flag=false;
+    var btn1=document.querySelectorAll("input")[0];
+    var btn2=document.querySelectorAll("input")[1];
+    function czmouse() {
+        var mouseImg=document.createElement("img");
+        mouseImg.setAttribute("src","images/mouse.png");
+        mouseImg.style.width="100px";
+        mouseImg.style.height="100px";
+        mouseImg.style.position="absolute";
+        mouseImg.onclick=function () {
+          this.parentElement.removeChild(this);
+        };
+        return mouseImg;
+    }
+    var intervaId;
+    function randomInt(m,n) {
+        return parseInt(Math.random()*(n-m+1)+m)
+    }
+    function gameOver() {
+        var mouseCount=box.childElementCount;
+        if (mouseCount>=10){
+            clearInterval(intervaId);
+            intervaId=0;
+            for (var i=0;i<mouseCount;i++){
+                box.removeChild(box.children[0])
+            }
+            var endImg=document.createElement("img");
+            endImg.style.position="absolute";
+            endImg.src = "images/end.png";
+            endImg.onclick=null;
+            endImg.className="end";
+            endImg.style.width="500px";
+            endImg.style.height="500px";
+            endImg.style.left="250px";
+            box.appendChild(endImg);
+            btn1.value="重新开始";
+            flag=true;
+        }
+    }
+    function xhmouse() {
+        intervaId=window.setInterval(function () {
+            var mouse=czmouse();
+            var left=randomInt(0,800);
+            var top=randomInt(0,500);
+            mouse.style.left=left+"px";
+            mouse.style.top=top+"px";
+            box.appendChild(mouse);
+            gameOver();
+        },500)
+    }
+    btn1.onclick=function () {
+        if (intervaId){
+            return
+        }
+        if(this.value=="重新开始"){
+            xhmouse();
+            this.value="开始"
+        }else if (this.value=="开始"){
+            xhmouse();
+            this.value="重新开始"
+        }
+    };
+    btn2.onclick=function (){
+        if (flag){
+            return;
+        }
+        if (this.value=="暂停"){
+            clearInterval(intervaId);
+            this.value="继续"
+        } else if (this.value=="继续"){
+            this.value="暂停"
+        }
+    }
+</script>
+</html>

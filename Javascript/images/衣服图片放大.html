@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            border: 1px solid black;
+        }
+        #box>img{
+            margin:0 10px ;
+        }
+        #hid>img{
+            display: none;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <img src="img3/shirt_1.jpg" name="img-s">
+    <img src="img3/shirt_2.jpg" name="img-s">
+    <img src="img3/shirt_3.jpg" name="img-s">
+    <img src="img3/shirt_4.jpg" name="img-s">
+</div>
+<div id="hid">
+    <img src="img3/shirt_1_big.jpg" name="img-b">
+    <img src="img3/shirt_2_big.jpg" name="img-b">
+    <img src="img3/shirt_3_big.jpg" name="img-b">
+    <img src="img3/shirt_4_big.jpg" name="img-b">
+</div>
+</body>
+<script type="text/javascript">
+    var imgss=document.getElementsByName("img-s");
+    var imgbs=document.getElementsByName("img-b");
+    for (let i=0;i<=imgss.length;i++) {
+        imgss[i].onmouseover=function (e) {
+            this.style.borderColor='red';
+            imgbs[i].style.display='block';
+        };
+        imgss[i].onmouseout=function (e) {
+            this.style.borderColor='black';
+            imgbs[i].style.display='none';
+        };
+        imgss[i].onmousemove=function (e) {
+            var left=event.clientX+1;
+            var top=event.clientY+1;
+            imgbs[i].style.left=left+"px";
+            imgbs[i].style.top=top+"px";
+        }
+    }
+</script>
+</html>

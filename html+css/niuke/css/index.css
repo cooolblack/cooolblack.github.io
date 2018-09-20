@@ -1,0 +1,101 @@
+body{
+    background: #f0f0f0;/*背景色   */
+}
+.active{
+    background: #31363d;/*背景色*/
+}
+.active a{
+    color: #fff !important;/**/
+}
+.nk-container{
+    width: 100%;/*宽*/
+    height: 54px;/*高*/
+    background: #3d444c;/*背景色*/
+    position:fixed;/*位置固定*/
+    top: 0;
+}
+.nk-container .header-main{
+    width: 960px;/*宽*/
+    margin: 0 auto;/*间距*/
+}
+.nk-container .header-main a{
+    color: #aaa;/**/
+}
+.nk-container .header-main a:hover{
+    color: #fff;/**/
+}
+.nk-container .header-main .logo{
+    display: block;/**/
+    width: 147px;/**/
+    height: 42px;/**/
+    margin: 5px 6px 0 0;/**/
+    background: url("../images/logo-v3.png") no-repeat;/**/
+    background-size: 147px 42px;/**/
+    float: left;/**/
+}
+.nk-container .header-main .navbar-l {
+    float: left;/**/
+}
+.nk-container .header-main .navbar-l li {
+    position: relative;/**/
+    float: left;/**/
+    width: 64px;/**/
+    height: 54px;/**/
+    line-height: 54px;/**/
+    text-align: center;/**/
+}
+.nk-container .header-main .navbar-l li:hover{
+    background: #31363d;/**/
+    color: #fff;/**/
+}
+.nk-container .header-main .navbar-r {
+    float: right;
+}
+.nk-container .header-main ul:last-of-type li{
+    float: right;
+    width: 64px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+}
+.icon-new{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 9px;
+    height: 12px;
+    background: url("../images/icon-new.png")no-repeat;
+}
+.fixed-menu{
+    position: fixed;
+     right: 20px;
+     top: 100px;
+ }
+ .fixed-menu ul li{
+     margin-bottom: 5px;
+ }
+ .fixed-menu ul a{
+     display: block ; ;
+     border: 1px solid #aaaaaa ;
+     width: 30px;
+     height: 30px;
+     background: #ebfff1;
+     line-height: 30px;
+     text-align: center;
+ }
+ .fixed-menu ul a:hover i{
+     background: #87fffc;
+     color: white;
+ }
+.fixed-menu ul i{
+    display:block;
+    color: #5f6a73;
+     font-size: 20px;
+}
+.count-item{
+    display: inline-block;
+}
+.nk-main{
+    margin-top: 60px;
+}
+

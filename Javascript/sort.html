@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="aaa">
+<button id="btn">提交</button>
+</body>
+<script type="text/javascript">
+    var arr=[99,85,82,63,60];
+    btn.onclick=function(){
+        var b=parseInt(aaa.value);
+        arr.push(b);
+        function f(x,y){
+            if (x>y){
+                return 1;
+            } else if (x<y){
+                return -1;
+            }
+        }
+        function t(x,y){
+            if (x>y){
+                return -1;
+            } else if (x<y){
+                return 1;
+            }
+        }
+        var newarr=arr.sort(f);
+        document.write(newarr+"&nbsp&nbsp&nbsp");
+        var newarr_2=arr.sort(t);
+        document.write(newarr_2);
+    }
+</script>
+</html>
