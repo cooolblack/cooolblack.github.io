@@ -15,10 +15,21 @@
 	<script type="text/javascript">
 		$(function () {
 			var html1='';
+			var html2='';
+			var html3='';
 			for(var i in citiesall){
-				html1+='<option>'+citiesall[i].name+'</option>';	
+				html1+='<option>'+citiesall[i].name+'</option>';
+			}
+			for(var j in citiesall[0].city){
+					html2+='<option>'+citiesall[0].city[j].name+'</option>';
+				}
+			for(var k in citiesall[0].city[0].area){
+					html3+='<option>'+citiesall[0].city[0].area[k]+'</option>';
 			}
 			$('#province').html(html1);
+			$('#city').html(html2);
+			$('#district').html(html3);
+			
 			$('#province').change(function  () {
 				var province=$(this).val();
 				for(var i in citiesall){
@@ -26,7 +37,13 @@
 						var html2='';
 						var citys=citiesall[i].city;
 						for (var j in citys) {
-							html2+='<option>'+citys[j].name+'</option>';	
+							html2+='<option>'+citys[j].name+'</option>';
+							var html3='';
+							var district=citys[j].area;
+							for (var k in district) {
+								html3+='<option>'+district[k]+'</option>';
+							}
+							$('#district').html(html3);
 						}
 						$('#city').html(html2);
 					}
