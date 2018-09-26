@@ -30,6 +30,8 @@
 <a href="https://cooolblack.github.io/Javascript/factorization.html	">质因数分解</a><br>
 <a href="https://cooolblack.github.io/Javascript/score.html">总分和平均分</a><br>
 <a href="https://cooolblack.github.io/Javascript/drinks.html">饮品换购</a><br>
+<a href="https://cooolblack.github.io/Javascript/monkey.html">猴子分桃</a><br>
+<a href="https://cooolblack.github.io/Javascript/clothes.html">衣服随鼠标移动</a><br>
 
 ##JQuery
 
@@ -42,6 +44,8 @@
 <a href="https://cooolblack.github.io/JQuery/append.html">append</a><br>
 <a href="https://cooolblack.github.io/JQuery/accordion.html">手风琴</a><br>
 <a href="https://cooolblack.github.io/JQuery/Cut-the-figure.html">切图</a><br>
+<a href="https://cooolblack.github.io/JQuery/ajaxlogin/index.html">ajax后台界面</a><br>
+<a href="https://cooolblack.github.io/JQuery/ajaxlogin/login.html">ajax登录页面</a><br>
 
 
 ##study in 1837

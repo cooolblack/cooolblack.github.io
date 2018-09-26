@@ -1,0 +1,64 @@
+.loginform{
+	position: absolute;
+	max-width:500px;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+	padding:20px 25px;
+	background-color:rgba(36, 85, 128,0.5);
+	border-radius: 10px;
+	box-shadow:0px 0px 10px 10px rgb(36, 85, 128);
+	animation: loginForm .6s;
+}
+@keyframes loginForm{
+	from{
+		top:0%;
+	}
+	to{
+		top:50%;
+	}
+}
+.loginform .form-group:last-child{
+	margin-bottom:0px;
+}
+.loginform .img-thumbnail{
+	max-width:100px;
+	max-height: 34px;
+}
+.loginform h3{
+	margin-top:0px;
+}
+.d3{
+	top:50%;
+	transform: translateY(-50%);
+	perspective: 3000px;
+}
+.d3 .modal-dialog{
+	transform: rotateY(90deg);
+	transform-origin: left;
+	transition: all 1s;
+}
+.d3.in .modal-dialog{
+	transform:rotateY(0deg);
+}
+.d3 .progress{
+	margin-bottom:0px;
+}
+.d3 .progress .progress-bar{
+	width:100%;
+	animation: progressbar 1s linear 0s infinite;
+}
+@keyframes progressbar{
+	from{
+		background-position: 0px;
+	}
+	to{
+		background-position: 40px;
+	}
+}
+.form-horizontal .has-feedback .form-control-feedback.left{
+	left:15px;
+}
+.loginform .form-control{
+	padding-left:26px;
+}

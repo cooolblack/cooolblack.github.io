@@ -1,0 +1,117 @@
+*{
+			margin:0;
+			padding:0;
+		}
+		.player{
+			position:relative;
+			width:640px;
+			height:360px;
+			margin:0 auto;
+		}
+		.player video{
+			position: absolute;
+			z-index:1;
+		}
+		.player div.pre{
+			width:100%;
+			height:100%;
+			position: absolute;
+			top:0px;
+			background-color:rgba(0,0,0,0.5);
+			z-index:2;
+		}
+		.player div.pre:before{
+			content:"";
+			display:block;
+			width:0px;
+			height:0px;
+			border:30px solid transparent;
+			border-left-color:rgba(255,255,255,0.7);
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translateX(-25px) translateY(-50px) rotate(0deg);
+			z-index:2;
+		}
+		.player div.pre:after{
+			content:"";
+			display:block;
+			width:70px;
+			height:70px;
+			border:2px solid rgba(0,0,0,0.1);
+			border-radius: 40px;
+			position: absolute;
+			top:50%;
+			left:50%;
+			z-index:2;
+			box-shadow:inset 0px 0px 14px 8px #FFF,0px 0px 50px 5px #FFF;
+			transform:translateX(-53px) translateY(-55px) rotate(0deg);
+		}
+		.player div.pre:hover:after{
+			box-shadow:inset 0px 0px 20px 8px #FFF,0px 0px 20px 5px #FFF;
+		}
+		.player:hover .toolbar{
+			display:block;
+		}
+		.player .toolbar{
+			width:100%;
+			height:30px;
+			padding:10px 0px;
+			position: absolute;
+			background-color:rgba(0,0,0,0.5);
+			bottom: 5px;
+			display:none;
+			z-index:3;
+		}
+		.player .toolbar a{
+			position: relative;
+			float:left;
+			color:#FFF;
+			left:10px;
+			padding:0px 10px;
+		}
+		.player .toolbar a:first-child{
+			width:20px;
+			height:20px;
+		}
+		.toolbar>a:first-child:before{
+			content:'';
+			position: absolute;
+			display:block;
+			width:0px;
+			height:0px;
+			left:10px;
+			border:10px solid transparent;
+			border-left-color:#FFF;
+		}
+		.toolbar>a.pause:first-child:before{
+			border:none;
+		}
+		.toolbar>a.pause:first-child:after{
+			content:'';
+			position: absolute;
+			display:block;
+			width:5px;
+			height:20px;
+			left:10px;
+			border-left:3px solid #FFF;
+			border-right:3px solid #FFF;
+		}
+		.toolbar>a:nth-child(2){
+			
+		}
+		.toolbar>a.progress{
+			width:50%;
+			border-top:1px solid #FFF;
+			transform:translateY(50%);
+			text-indent: -99999px;
+		}
+		.toolbar>a.progress b{
+			background-color:#FFF;
+			position: absolute;
+			width:16px;
+			height:16px;
+			border-radius: 3px;
+			left:0px;
+			top:-8px;
+		}

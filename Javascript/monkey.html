@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>猴子分桃:海滩上有一堆桃子,五只猴子来分.第一只猴子把这堆桃子分为5份,多出一个,它把多出的一个吃了,拿走一份,后来的猴子也是这样做的,问:原来海滩上有多少个桃子.</p>
+		<div></div>
+	</body>
+	<script type="text/javascript">
+		var d = document.querySelector("div")
+		var peachNum = 6;
+		while(1){
+			var temp = peachNum;
+			var monkey = 0;
+			while(1){
+				if(temp % 5 == 1){
+					temp = (temp - 1) / 5 * 4
+					monkey ++
+				}else{
+					break
+				}
+			}
+			if(monkey == 5){
+				break
+			}
+			peachNum += 5
+		}
+		d.innerHTML="海滩上原来最少有" + peachNum + "个桃子"
+	</script>
+</html>
