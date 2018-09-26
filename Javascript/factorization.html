@@ -5,19 +5,23 @@
     <title>Title</title>
 </head>
 <body>
+    <p>输入一个整数,对它进行因式分解:</p>
 <input type="text" id="shu">
 <button id="btn">分解</button>
+<div></div>
 </body>
 <script type="text/javascript">
+var d = document.querySelector("div")
     btn.onclick=function () {
+        d.innerHTML=""
         var a=parseInt(shu.value);
         var b,c;
         for (b=2,c=a;b<=c;b++){
             if (c%b ==0){
                 if (c ==b){
-                    document.write(b)
+                    d.innerHTML+=b;
                 }else {
-                    document.write(b+"*")
+                    d.innerHTML+=b+"*"
                 }
                 c/=b;
                 b--;

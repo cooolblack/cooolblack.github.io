@@ -5,11 +5,14 @@
     <title>Title</title>
 </head>
 <body>
+    <p>遍历出100以内3和5的公倍数:</p>
+    <div></div>
 </body>
 <script type="text/javascript">
+var x = document.querySelector("div");
     for (var i=1;i<=100;i++){
         if (i %3==0&&i%5==0){
-            document.write(i+"<br>")
+            x.innerHTML+=i+"<br>"
         }
     }
 </script>

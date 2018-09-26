@@ -5,11 +5,14 @@
     <title>Title</title>
 </head>
 <body>
+    <p>有一个从大到小排好的数组{99,85,82,63,60}.输入一个数,然后按顺序插入数组相应的位置:</p>
 <input type="text" id="aaa">
 <button id="btn">提交</button>
+<div></div>
 </body>
 <script type="text/javascript">
     var arr=[99,85,82,63,60];
+    var d = document.querySelector("div");
     btn.onclick=function(){
         var b=parseInt(aaa.value);
         arr.push(b);
@@ -28,9 +31,9 @@
             }
         }
         var newarr=arr.sort(f);
-        document.write(newarr+"&nbsp&nbsp&nbsp");
+       d.innerHTML="从小到大"+newarr+"&nbsp&nbsp&nbsp"
         var newarr_2=arr.sort(t);
-        document.write(newarr_2);
+        d.innerHTML+="从大到小"+newarr_2;
     }
 </script>
 </html>
