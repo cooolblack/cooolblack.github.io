@@ -89,7 +89,7 @@
 			$(function () {
 				$('ul>li').hover(function () {
 					var i=$(this).index()
-					$('div>img').eq(i).stop().fadeIn(1500).siblings().stop().fadeOut(1500)
+					$('div>img').eq(i).stop().fadeIn().siblings().stop().fadeOut()
 					$(this).addClass('lih').siblings().removeClass('lih')
 				});
 				$("span:first").click(function () { 
@@ -98,7 +98,7 @@
 					if(j<0){
 						j=2
 					}
-					$('div>img').eq(j).stop().fadeIn(1000).siblings().stop().fadeOut(1000)
+					$('div>img').eq(j).stop().fadeIn().siblings().stop().fadeOut()
 					$('ul>li').eq(j).addClass('lih').siblings().removeClass('lih')
 					window.clearInterval(a);
 				});
@@ -108,7 +108,7 @@
 					if(j>2){
 						j=0
 					}
-					$('div>img').eq(j).stop().fadeIn(1000).siblings().stop().fadeOut(1000)
+					$('div>img').eq(j).stop().fadeIn().siblings().stop().fadeOut()
 					$('ul>li').eq(j).addClass('lih').siblings().removeClass('lih')
 					window.clearInterval(a);
 				});
@@ -118,7 +118,7 @@
 					if(j>2){
 						j=0
 					}
-					$('div>img').eq(j).stop().fadeIn(1000).siblings().stop().fadeOut(1000)
+					$('div>img').eq(j).stop().fadeIn().siblings().stop().fadeOut()
 					$('ul>li').eq(j).addClass('lih').siblings().removeClass('lih')
 				}
 				$("div>img").on('mouseenter',function() {
