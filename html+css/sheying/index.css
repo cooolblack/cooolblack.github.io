@@ -1,0 +1,226 @@
+h4,
+h2,
+h1,
+div,
+ul,
+a {
+  padding: 0;
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+.container-fluid {
+  letter-spacing: 1px;
+  padding: 0;
+}
+.container-fluid .header {
+  width: 100%;
+  padding: 15px;
+  background: #1f2e46;
+}
+.container-fluid .header ul {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  position: relative;
+  color: #ccc;
+}
+.container-fluid .header ul a {
+  color: #ccc;
+  line-height: 22px;
+}
+.container-fluid .header ul span {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: #ccc;
+  position: relative;
+  top: 2px;
+  margin: 0 5px;
+}
+.container-fluid .header .pull-left li {
+  list-style: none;
+  float: left;
+  margin-left: 20px;
+}
+.container-fluid .nav .container {
+  position: relative;
+}
+.container-fluid .nav .container .logo {
+  display: inline-block;
+}
+.container-fluid .nav .container .logo img {
+  width: 100px;
+  height: 100px;
+}
+.container-fluid .nav .container .nav-list {
+  display: inline-block;
+}
+.container-fluid .nav .container .nav-list > ul:last-child::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #555;
+}
+.container-fluid .nav .container .nav-list > ul {
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+}
+.container-fluid .nav .container .nav-list > ul i {
+  margin-left: 30px;
+}
+.container-fluid .nav .container .nav-list > ul a {
+  margin-right: 30px;
+}
+.container-fluid .nav .container .nav-list > ul a,
+.container-fluid .nav .container .nav-list > ul i {
+  color: #555;
+  font-weight: bold;
+}
+.container-fluid .nav .container .nav-list > ul a:hover,
+.container-fluid .nav .container .nav-list > ul i:hover {
+  color: yellowgreen;
+  text-decoration: none;
+}
+.container-fluid .nav .container .nav-list .dropdown {
+  display: inline-block;
+}
+.container-fluid .nav .container .nav-list .dropdown .dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+}
+.container-fluid .nav .container .nav-list .dropdown .dropdown-menu li a {
+  padding: 10px;
+  margin: 0;
+}
+.container-fluid .broadcast #carousel-example-generic .carousel-inner .item img {
+  width: 100%;
+  height: 40%;
+}
+.container-fluid .content .container {
+  padding: 50px 0;
+}
+.container-fluid .content .container > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container-fluid .content .container .col-xs-4 {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.container-fluid .content .container .col-xs-4 img {
+  border-radius: 0;
+}
+.container-fluid .content .container .col-xs-4 .caption {
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  display: none;
+}
+.container-fluid .content .container .col-xs-4 .caption h3 {
+  margin-top: 50px;
+}
+.container-fluid .content .container .col-xs-4 .caption p {
+  text-align: left;
+  padding: 0 30px;
+}
+.container-fluid .content .container .col-xs-4 .caption a {
+  color: white;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+.container-fluid .content .container .col-xs-4 .caption a:hover {
+  color: lightblue;
+}
+.container-fluid .content .container .col-xs-4:hover .caption {
+  display: block;
+}
+.container-fluid .bg {
+  background: url("5.jpg") center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container-fluid .bg > div {
+  width: 100%;
+  padding: 80px 0;
+}
+.container-fluid .bg > div h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  opacity: 0.7;
+}
+.container-fluid .bg2 {
+  background: url("3.jpg") center top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container-fluid .bg2 > div {
+  padding: 72px 0;
+}
+.container-fluid .bg2 > div a {
+  color: white;
+  font-size: 45px;
+  margin: 0 40px;
+  line-height: 64px;
+}
+.container-fluid .bg2 > div a:last-child {
+  padding: 0 25px;
+  float: right;
+  border-radius: 50px;
+  border: 5px solid white;
+}
+.container-fluid .bg2 > div a:hover {
+  opacity: 0.5;
+}
+.modal .modal-dialog {
+  width: 400px;
+}
+.modal .modal-dialog .modal-content {
+  position: relative;
+  border-radius: 0;
+  width: 100%;
+}
+.modal .modal-dialog .modal-content > ul {
+  padding: 0;
+  margin: 0;
+}
+.modal .modal-dialog .modal-content .col-xs-6 {
+  background: white;
+  width: 50;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.modal .modal-dialog .modal-content .login {
+  border-right: 1px solid #ccc;
+}
+.modal .modal-dialog .modal-content .form-group .text-center {
+  margin-top: 65px;
+}
+.modal .modal-dialog .modal-content .form-group .btn {
+  width: 100px;
+}
+.modal .modal-dialog .modal-content .form-group ul {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.modal .modal-dialog .modal-content .form-group ul a {
+  color: #000;
+}
